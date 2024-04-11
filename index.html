@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./dist/index.css" />
+  <!-- fonts -->
+  <link href="https://fonts.cdnfonts.com/css/lufga" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__flex">
+        <div class="header__logo">
+          <img class="header__logo-image" src="./assets/images/logo.svg" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="#" class="header__nav-link">
+                <span class=" header__nav-link-text">HOME</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__nav-link">
+                <span class=" header__nav-link-text">PROPERTIES</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__nav-link">
+                <span class=" header__nav-link-text">AGENTS</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__nav-link">
+                <span class=" header__nav-link-text">BLOG</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="header__nav-link header__nav-link--login">
+                <span class=" header__nav-link-text text--blue">LOG IN</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="banner">
+      <div class="wrapper">
+        <div class="banner__flex">
+          <h1 class=" header--1 banner__header1">Easy way to find a perfect property</h1>
+          <p class=" text--alt banner__paragraph">We provide a complete service for the
+            sale, purchase
+            or rental of
+            real estate
+          </p>
+          <div class="banner__searchbox">
+            <div class="banner__searchbox-tabs">
+              <ul class="banner__searchbox-tabs-list">
+                <li data-tab-number="1"
+                  class="banner__searchbox-tabs-option banner__searchbox-tabs-option--active tabButton">
+                  <span class="banner__searchbox-tabs-option-text">RENT</span>
+                </li>
+                <li data-tab-number="2" class="banner__searchbox-tabs-option tabButton">
+                  <span class="banner__searchbox-tabs-option-text">BUY</span>
+                </li>
+                <li data-tab-number="3" class="banner__searchbox-tabs-option tabButton">
+                  <span class="banner__searchbox-tabs-option-text">SELL</span>
+                </li>
+              </ul>
+              <form data-tab="1" action="/search" method="GET" class="banner__searchbox-form">
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Location</p>
+                  <input class="banner__searchbox-form-section-field" type="text" placeholder="Select Your City" />
+                </div>
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Property Type</p>
+                  <select class="banner__searchbox-form-section-field" id="cars">
+                    <option value="placeholder">Choose property type</option>
+                    <option value="flat">Flat</option>
+                    <option value="house">House</option>
+                  </select>
+                </div>
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Price Range</p>
+                  <input class="banner__searchbox-form-section-field" type="number" placeholder="Choose Price Range" />
+                </div>
+                <button class="banner__searchbox-form-section-button" type="submit">
+                  <img src="./assets/images/MGlass.png">
+                </button>
+              </form>
+              <form data-tab="2" action="/search" method="GET"
+                class="banner__searchbox-form banner__searchbox-form--hidden">
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Location</p>
+                  <input class="banner__searchbox-form-section-field" type="text" placeholder="Select Your City" />
+                </div>
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Property Type</p>
+                  <select class="banner__searchbox-form-section-field" id="cars">
+                    <option value="placeholder">Choose property type</option>
+                    <option value="flat">Flat</option>
+                    <option value="house">House</option>
+                  </select>
+                </div>
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Price Range</p>
+                  <input class="banner__searchbox-form-section-field" type="number" placeholder="Choose Price Range" />
+                </div>
+                <button class="banner__searchbox-form-section-button" type="submit">
+                  <img src="./assets/images/MGlass.png">
+                </button>
+              </form>
+              <form data-tab="3" action="/search" method="GET"
+                class="banner__searchbox-form banner__searchbox-form--hidden">
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Location</p>
+                  <input class="banner__searchbox-form-section-field" type="text" placeholder="Select Your City" />
+                </div>
+                <div class="banner__searchbox-form-section">
+                  <p class=" banner__searchbox-form-section-paragraph">Property Type</p>
+                  <select class="banner__searchbox-form-section-field" id="cars">
+                    <option value="placeholder">Choose property type</option>
+                    <option value="flat">Flat</option>
+                    <option value="house">House</option>
+                  </select>
+                </div>
+                <button class="banner__searchbox-form-section-button" type="submit">
+                  >
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="countries">
+      <div class="wrapper">
+        <div class="countries__flex">
+          <h2 class="header--2 countries__header ">We are available in many well-known countries</h2>
+          <div class="countries__thumbnails">
+            <div class="countries__thumbnails-country">
+              <img src="./assets/images/thumbnail-america.png" alt="" class="countries__thumbnails-country-img">
+              <h3 class="countries__thumbnails-country-text">AMERICA</h3>
+            </div>
+            <div class="countries__thumbnails-country">
+              <img src="./assets/images/thumbnail-spain.png" alt="" class="countries__thumbnails-country-img">
+              <h3 class="countries__thumbnails-country-text">SPAIN</h3>
+            </div>
+            <div class="countries__thumbnails-country">
+              <img src="./assets/images/thumbnail-london.png" alt="" class="countries__thumbnails-country-img">
+              <h3 class="countries__thumbnails-country-text">LONDON</h3>
+            </div>
+            <div class="countries__thumbnails-country">
+              <img src="./assets/images/thumbnail-france.png" alt="" class="countries__thumbnails-country-img">
+              <h3 class="countries__thumbnails-country-text">FRANCE</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="highlights">
+      <div class="wrapper">
+        <div class="highlights__flex">
+          <h2 class="header--2 highlights__header2">Recently Added</h2>
+          <a class="highlights__button" href="">
+            <p class="text--blue">See all</p>
+          </a>
+          <div class="highlights__boxes">
+            <div class="highlights__boxes-box">
+              <img src="./assets/images/highlights-1.png" alt="" class="highlights__boxes-box-image">
+              <div class="highlights__boxes-box-details">
+                <h3 class="header--3 highlights__boxes-box-details-header">103/143 West Street, Crowns Nest</h3>
+                <p class="highlights__boxes-box-details-detail text--alt">30 Bedroom</p>
+                <p class="highlights__boxes-box-details-detail text--alt">180 M</p>
+                <p class="highlights__boxes-box-details-detail text--alt">2 Garage</p>
+                <p class="highlights__boxes-box-details-detail text--alt">Posted by X Builder</p>
+                <p class="highlights__boxes-box-details-detail highlights__boxes-box-details-detail--price">$45,545</p>
+              </div>
+            </div>
+            <div class="highlights__boxes-box">
+              <img src="./assets/images/highlights-1.png" alt="" class="highlights__boxes-box-image">
+              <div class="highlights__boxes-box-details">
+                <h3 class="header--3 highlights__boxes-box-details-header">103/143 West Street, Crowns Nest</h3>
+                <p class="highlights__boxes-box-details-detail text--alt">30 Bedroom</p>
+                <p class="highlights__boxes-box-details-detail text--alt">180 M</p>
+                <p class="highlights__boxes-box-details-detail text--alt">2 Garage</p>
+                <p class="highlights__boxes-box-details-detail text--alt">Posted by X Builder</p>
+                <p class="highlights__boxes-box-details-detail highlights__boxes-box-details-detail--price">1
+                  BTC
+                </p>
+              </div>
+            </div>
+            <div class="highlights__boxes-box">
+              <img src="./assets/images/highlights-1.png" alt="" class="highlights__boxes-box-image">
+              <div class="highlights__boxes-box-details">
+                <h3 class="header--3 highlights__boxes-box-details-header">103/143 West Street, Crowns Nest</h3>
+                <p class="highlights__boxes-box-details-detail text--alt">30 Bedroom</p>
+                <p class="highlights__boxes-box-details-detail text--alt">180 M</p>
+                <p class="highlights__boxes-box-details-detail text--alt">2 Garage</p>
+                <p class="highlights__boxes-box-details-detail text--alt">Posted by X Builder</p>
+                <p class="highlights__boxes-box-details-detail highlights__boxes-box-details-detail--price">$45,545</p>
+              </div>
+            </div>
+            <div class="highlights__boxes-box">
+              <img src="./assets/images/highlights-1.png" alt="" class="highlights__boxes-box-image">
+              <div class="highlights__boxes-box-details">
+                <h3 class="header--3 highlights__boxes-box-details-header">103/143 West Street, Crowns Nest</h3>
+                <p class="highlights__boxes-box-details-detail text--alt">30 Bedroom</p>
+                <p class="highlights__boxes-box-details-detail text--alt">180 M</p>
+                <p class="highlights__boxes-box-details-detail text--alt">2 Garage</p>
+                <p class="highlights__boxes-box-details-detail text--alt">Posted by X Builder</p>
+                <p class="highlights__boxes-box-details-detail highlights__boxes-box-details-detail--price">1
+                  BTC
+                </p>
+              </div>
+            </div>
+            <div class="highlights__boxes-box">
+              <img src="./assets/images/highlights-1.png" alt="" class="highlights__boxes-box-image">
+              <div class="highlights__boxes-box-details">
+                <h3 class="header--3 highlights__boxes-box-details-header">103/143 West Street, Crowns Nest</h3>
+                <p class="highlights__boxes-box-details-detail text--alt">30 Bedroom</p>
+                <p class="highlights__boxes-box-details-detail text--alt">180 M</p>
+                <p class="highlights__boxes-box-details-detail text--alt">2 Garage</p>
+                <p class="highlights__boxes-box-details-detail text--alt">Posted by X Builder</p>
+                <p class="highlights__boxes-box-details-detail highlights__boxes-box-details-detail--price">$45,545</p>
+              </div>
+            </div>
+            <div class="highlights__boxes-box">
+              <img src="./assets/images/highlights-1.png" alt="" class="highlights__boxes-box-image">
+              <div class="highlights__boxes-box-details">
+                <h3 class="header--3 highlights__boxes-box-details-header">103/143 West Street, Crowns Nest</h3>
+                <p class="highlights__boxes-box-details-detail text--alt">30 Bedroom</p>
+                <p class="highlights__boxes-box-details-detail text--alt">180 M</p>
+                <p class="highlights__boxes-box-details-detail text--alt">2 Garage</p>
+                <p class="highlights__boxes-box-details-detail text--alt">Posted by X Builder</p>
+                <p class="highlights__boxes-box-details-detail highlights__boxes-box-details-detail--price">1
+                  BTC
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="wrapper">
+        <div class="contact__flex">
+          <h2 class=" header--1 contact__header1">
+            Find your best Real Estate</h1>
+            <p class=" text--alt contact__paragraph">We provide a complete service for the
+              sale, purchase
+              or rental of
+              real estate
+            </p>
+            <a class="contact__button" href="">CONTACT US</a>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__flex">
+        <div class="footer__company">
+          <img class="footer__company-logo-image" src="./assets/images/logo.svg" />
+          <p class="footer__company-description text--alt"> We provide a complete service for the
+            sale, purchase
+            or rental of
+            real estateWe provide a complete service for the
+            sale, purchase
+            or rental of
+            real estateWe provide a complete service for the
+            sale, purchase
+            or rental of
+            real estate
+          </p>
+          <div class="footer__company-socials">
+            <a href=""><img class="footer__company-socials-icon" src="./assets/icons/Facebook - Original.svg" /></a>
+            <a href=""><img class="footer__company-socials-icon" src="./assets/icons/Twitter - Original.svg" /></a>
+            <a href=""><img class="footer__company-socials-icon" src="./assets/icons/Instagram - Original.svg" /></a>
+            <a href=""><img class="footer__company-socials-icon" src="./assets/icons/LinkedIn - Original.svg" /></a>
+          </div>
+          <p class="footer__company-rights text--alt">X 2021 All rights reserved</p>
+        </div>
+        <div class="footer__links">
+          <h2 class="footer__header">Take a tour</h2>
+          <ul>
+            <li>
+              <a href="">
+                <p>Features</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Partners</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Pricing</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Product</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Support</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h2 class="footer__header">Our Company</h2>
+          <ul>
+            <li>
+              <a href="">
+                <p>About Us</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Agents</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Blog</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Media</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p>Contact Us</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h2 class="footer__header">Subscribe</h2>
+          <p class="footer__newsletter-description text--alt">Subscribe to get latest property, blog news from us</p>
+          <div class="footer__newsletter-email">
+            <input type="email" class="footer__newsletter-email-field" placeholder="Email Address" />
+            <button class="footer__newsletter-email-button" type="submit">-></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./dist/main.script.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+.highlights {
+    margin-bottom: 120px;
+
+    &__flex {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        flex-basis: 50%;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    &__header2 {
+        flex: 1 10%;
+    }
+
+    &__button {
+        flex: 1 10%;
+        text-align: right;
+        font-size: 24px;
+
+    }
+
+    &__boxes {
+        width: 100%;
+        @include flex-space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &-box {
+            flex: 1 45%;
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+            border: solid 1px $colorBlue;
+            border-radius: 15px;
+
+            &-img {}
+
+            &-details {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                flex-flow: row wrap;
+                width: 100%;
+
+                &-header {
+                    width: 100%;
+                }
+
+                &-detail {
+
+                    text-align: center;
+                    font-size: 19px;
+                    height: 41px;
+
+                    &--price {
+                        padding: 8px 10px;
+                        border-radius: 15px;
+                        background-color: $colorDarkGrey;
+                        color: $colorWhite;
+                    }
+                }
+            }
+        }
+    }
+}

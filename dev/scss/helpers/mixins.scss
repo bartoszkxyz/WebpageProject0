@@ -1,0 +1,16 @@
+@mixin breakMin($width) {
+  @media only screen and (min-width: "#{$width}px") {
+    @content;
+  }
+}
+
+@mixin breakMax($width) {
+  @media only screen and (max-width: "#{$width}px") {
+    @content;
+  }
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}

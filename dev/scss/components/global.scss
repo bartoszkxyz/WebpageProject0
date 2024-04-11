@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  color: $colorMainText;
+  font-family: "Lufga", Arial;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+
+.header {
+  &--1 {
+    font-size: 56px;
+    font-weight: 600;
+  }
+
+  &--2 {
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  &--3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
+.text {
+  &--blue {
+    color: $colorBlue;
+  }
+
+  &--alt {
+    color: $colorAltText;
+  }
+}

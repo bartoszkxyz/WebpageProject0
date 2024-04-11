@@ -1,0 +1,41 @@
+.countries {
+    margin-bottom: 140px;
+
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 55px;
+    }
+
+    &__header {
+        text-align: center;
+        width: 40%;
+    }
+
+    &__thumbnails {
+        @include flex-space-between;
+        justify-content: center;
+        gap: 30px;
+
+        &-country {
+            position: relative;
+
+            &-img {
+                position: relative;
+                flex: 1;
+            }
+
+            &-text {
+                position: absolute;
+                margin: auto;
+                top: 50px;
+                left: 30%;
+                z-index: 1;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 4.8px;
+            }
+        }
+    }
+}

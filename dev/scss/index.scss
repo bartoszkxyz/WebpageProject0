@@ -1,0 +1,15 @@
+//helpers
+@import "./helpers/mixins";
+@import "./helpers/variables";
+
+//global
+@import "./components/global.scss";
+//components
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/main.scss";
+@import "./components/banner.scss";
+@import "./components/countries.scss";
+@import "./components/highlights.scss";
+@import "./components/contact.scss";

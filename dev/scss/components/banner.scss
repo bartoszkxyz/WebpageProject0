@@ -1,0 +1,115 @@
+.banner {
+    margin-bottom: 100px;
+
+    &__flex {
+        @include flex-space-between;
+        flex-direction: column;
+        gap: 40px;
+        padding: 90px 90px 95px 90px;
+        background-image: url("../assets/images/banner-img.svg");
+        background-size: cover;
+        border-radius: 50px;
+    }
+
+    &__paragraph {
+        width: 50%;
+        font-size: 22px;
+    }
+
+    &__header1 {
+        width: 50%;
+    }
+
+    &__searchbox {
+        margin-top: 22px;
+        width: 100%;
+
+        &-tabs {
+            &-list {
+                @include flex-space-between;
+                height: 40px;
+                width: 300px;
+            }
+
+            &-option {
+                height: 100%;
+                width: 33.3%;
+                align-content: center;
+                text-align: center;
+
+                &-text {
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 3.2px;
+                    line-height: 2.25em;
+                    text-align: left;
+                    color: $colorAltText;
+
+                }
+
+                &--active {
+                    background-color: $colorWhite;
+                    border-top-left-radius: 13px;
+                    border-top-right-radius: 13px;
+
+                    span {
+                        color: $colorMainText
+                    }
+                }
+            }
+        }
+
+        &-form {
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            height: 100px;
+            width: 75%;
+            background-color: $colorTransparentWhite;
+            padding: 20px 30px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+            backdrop-filter: blur(10px);
+
+            &--hidden {
+                display: none;
+            }
+
+            &-section {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-right: 2px solid $colorGrey;
+                flex: 1;
+                margin-right: 30px;
+
+                &-paragraph {
+                    font-size: 18px;
+                    height: 50%;
+                    line-height: 2;
+                    font-weight: 600;
+                }
+
+                &-field {
+                    height: 50%;
+                    border: none;
+                    background: none;
+                }
+
+                &-button {
+                    height: 55px;
+                    width: 55px;
+                    background: $colorBlue;
+                    border: none;
+                    border-radius: 15px;
+                    color: $colorWhite;
+                    font-size: 40px;
+                }
+
+            }
+        }
+    }
+}
